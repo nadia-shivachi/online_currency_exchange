@@ -1,0 +1,16 @@
+.header {
+    margin-bottom: 30px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.header__heading {
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: brown;
+}
+
+.header__image {
+    box-shadow: 5px 5px 5px 0px #F7DCA3;
+}
