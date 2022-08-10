@@ -23,7 +23,7 @@
     margin: 8px;
     border-color: antiquewhite;
     box-shadow: 5px 5px 5px 0px #F7DCA3;
-    background-color: #baa577;
+    background-color: #846f43;
     color: rgb(173, 20, 20);
 }
 
@@ -40,12 +40,12 @@
     margin: 8px;
     border-color: antiquewhite;
     box-shadow: 5px 5px 5px 0px #F7DCA3;
-    background-color: #baa577;
+    background-color: #846f43;
     color: rgb(14, 13, 13);
 }
 
 .form__submitButton:hover {
-    background-color: #836b36;
+    background-color: #e0b14c;
     width: 210px;
     color: rgb(39, 34, 34);
 }
