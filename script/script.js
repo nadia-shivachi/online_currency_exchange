@@ -1,21 +1,34 @@
-let plnElement = document.querySelector(".js-fieldPLN")
-let currencyElement = document.querySelector(".js-currency")
-let resultElement = document.querySelector(".js-result")
-let formElement = document.querySelector(".js-form")
-let resetElement = document.querySelector(".js-reset")
+{
+  const currencyConverter = () => {
+    const formElement = document.querySelector(".js-form");
+    const plnElement = document.querySelector(".js-fieldPLN");
+    const currencyElement = document.querySelector(".js-currency");
+    const resultElement = document.querySelector(".js-result");
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
+    formElement.addEventListener("submit", (event) => {
+      event.preventDefault();
 
-    let amount = plnElement.value;
-    let currency = currencyElement.value;
+      let amount = plnElement.value;
+      let currency = currencyElement.value;
+      let result = amount / currency;
 
-    let result = amount / currency;
+      resultElement.innerText = result.toFixed(2);
+    });
+  };
 
-    resultElement.innerText = result.toFixed(2);
-});
+  const resetResult = () => {
+    const resetElement = document.querySelector(".js-reset");
+    const resultElement = document.querySelector(".js-result");
 
-resetElement.addEventListener("click", () => {
+    resetElement.addEventListener("click", () => {
+      resultElement.innerText = "N/A";
+    });
+  };
 
-    resultElement.innerText = "N/A";
-});
+  const init = () => {
+    currencyConverter();
+    resetResult();
+  };
+
+  init();
+}
