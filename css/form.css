@@ -1,5 +1,7 @@
 .form {
     text-align: center;
+    background-color: rgb(207, 212, 159);
+    border-radius: 5px;
 }
 
 .form__field {
