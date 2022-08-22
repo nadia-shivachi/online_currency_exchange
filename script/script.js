@@ -1,5 +1,5 @@
 {
-  const currencyConverter = () => {
+  const convertCurrency = () => {
     const formElement = document.querySelector(".js-form");
     const plnElement = document.querySelector(".js-fieldPLN");
     const currencyElement = document.querySelector(".js-currency");
@@ -26,7 +26,7 @@
   };
 
   const init = () => {
-    currencyConverter();
+    convertCurrency();
     resetResult();
   };
 
